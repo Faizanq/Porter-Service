@@ -1,0 +1,306 @@
+Error {#390
+  +success: false
+  #_attributes: array:8 [
+    "errors" => ErrorCollection {#405
+      -_errors: ValidationErrorCollection {#393
+        -_errors: []
+        -_nested: array:1 [
+          "transaction" => ValidationErrorCollection {#395
+            -_errors: array:1 [
+              0 => Validation {#413
+                -_attribute: "paymentMethodNonce"
+                -_code: "91565"
+                -_message: "Unknown or expired paymentMethodNonce."
+              }
+            ]
+            -_nested: []
+            #_collection: []
+          }
+        ]
+        #_collection: []
+      }
+    }
+    "params" => array:1 [
+      "transaction" => array:3 [
+        "type" => "sale"
+        "amount" => "100.00"
+        "paymentMethodNonce" => "tokencc_bj_3v22kx_g73d44_zvpmsv_jsk79x_2cz"
+      ]
+    ]
+    "message" => "Unknown or expired payment_method_nonce."
+    "creditCardVerification" => null
+    "transaction" => null
+    "subscription" => null
+    "merchantAccount" => null
+    "verification" => null
+  ]
+}
+
+
+Successful {#393
+  +success: true
+  -_returnObjectNames: array:1 [
+    0 => "transaction"
+  ]
+  #_attributes: []
+  +"transaction": Transaction {#392
+    #_attributes: array:69 [
+      "id" => "4xnnrxbh"
+      "status" => "authorized"
+      "type" => "sale"
+      "currencyIsoCode" => "USD"
+      "amount" => "70.00"
+      "merchantAccountId" => "student"
+      "subMerchantAccountId" => null
+      "masterMerchantAccountId" => null
+      "orderId" => null
+      "createdAt" => DateTime @1548521210 {#400
+        date: 2019-01-26 16:46:50.0 UTC (+00:00)
+      }
+      "updatedAt" => DateTime @1548521210 {#401
+        date: 2019-01-26 16:46:50.0 UTC (+00:00)
+      }
+      "customer" => array:8 [
+        "id" => null
+        "firstName" => null
+        "lastName" => null
+        "company" => null
+        "email" => null
+        "website" => null
+        "phone" => null
+        "fax" => null
+      ]
+      "billing" => array:13 [
+        "id" => null
+        "firstName" => null
+        "lastName" => null
+        "company" => null
+        "streetAddress" => null
+        "extendedAddress" => null
+        "locality" => null
+        "region" => null
+        "postalCode" => null
+        "countryName" => null
+        "countryCodeAlpha2" => null
+        "countryCodeAlpha3" => null
+        "countryCodeNumeric" => null
+      ]
+      "refundId" => null
+      "refundIds" => []
+      "refundedTransactionId" => null
+      "partialSettlementTransactionIds" => []
+      "authorizedTransactionId" => null
+      "settlementBatchId" => null
+      "shipping" => array:13 [
+        "id" => null
+        "firstName" => null
+        "lastName" => null
+        "company" => null
+        "streetAddress" => null
+        "extendedAddress" => null
+        "locality" => null
+        "region" => null
+        "postalCode" => null
+        "countryName" => null
+        "countryCodeAlpha2" => null
+        "countryCodeAlpha3" => null
+        "countryCodeNumeric" => null
+      ]
+      "customFields" => null
+      "avsErrorResponseCode" => null
+      "avsPostalCodeResponseCode" => "I"
+      "avsStreetAddressResponseCode" => "I"
+      "cvvResponseCode" => "I"
+      "gatewayRejectionReason" => null
+      "processorAuthorizationCode" => "G39TKZ"
+      "processorResponseCode" => "1000"
+      "processorResponseText" => "Approved"
+      "additionalProcessorResponse" => null
+      "voiceReferralNumber" => null
+      "purchaseOrderNumber" => null
+      "taxAmount" => null
+      "taxExempt" => false
+      "creditCard" => array:22 [
+        "token" => null
+        "bin" => "411111"
+        "last4" => "1111"
+        "cardType" => "Visa"
+        "expirationMonth" => "05"
+        "expirationYear" => "2020"
+        "customerLocation" => "US"
+        "cardholderName" => null
+        "imageUrl" => "https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox"
+        "prepaid" => "Unknown"
+        "healthcare" => "Unknown"
+        "debit" => "Unknown"
+        "durbinRegulated" => "Unknown"
+        "commercial" => "Unknown"
+        "payroll" => "Unknown"
+        "issuingBank" => "Unknown"
+        "countryOfIssuance" => "Unknown"
+        "productId" => "Unknown"
+        "globalId" => null
+        "accountType" => null
+        "uniqueNumberIdentifier" => null
+        "venmoSdk" => false
+      ]
+      "statusHistory" => array:1 [
+        0 => StatusDetails {#408
+          #_attributes: array:5 [
+            "timestamp" => DateTime @1548521210 {#407
+              date: 2019-01-26 16:46:50.0 UTC (+00:00)
+            }
+            "status" => "authorized"
+            "amount" => "70.00"
+            "user" => "faizanqureshi0@gmail.com"
+            "transactionSource" => "api"
+          ]
+        }
+      ]
+      "planId" => null
+      "subscriptionId" => null
+      "subscription" => array:2 [
+        "billingPeriodEndDate" => null
+        "billingPeriodStartDate" => null
+      ]
+      "addOns" => []
+      "discounts" => []
+      "descriptor" => Descriptor {#406
+        #_attributes: array:3 [
+          "name" => null
+          "phone" => null
+          "url" => null
+        ]
+      }
+      "recurring" => false
+      "channel" => null
+      "serviceFeeAmount" => null
+      "escrowStatus" => null
+      "disbursementDetails" => DisbursementDetails {#383
+        #_attributes: array:6 [
+          "disbursementDate" => null
+          "settlementAmount" => null
+          "settlementCurrencyIsoCode" => null
+          "settlementCurrencyExchangeRate" => null
+          "fundsHeld" => null
+          "success" => null
+        ]
+      }
+      "disputes" => []
+      "authorizationAdjustments" => []
+      "paymentInstrumentType" => "credit_card"
+      "processorSettlementResponseCode" => null
+      "processorSettlementResponseText" => null
+      "threeDSecureInfo" => null
+      "shipsFromPostalCode" => null
+      "shippingAmount" => null
+      "discountAmount" => null
+      "networkTransactionId" => "020190126164650"
+      "refundGlobalIds" => []
+      "partialSettlementTransactionGlobalIds" => []
+      "refundedTransactionGlobalId" => null
+      "authorizedTransactionGlobalId" => null
+      "globalId" => "dHJhbnNhY3Rpb25fNHhubnJ4Ymg"
+      "processorResponseType" => "approved"
+      "authorizationExpiresAt" => DateTime @1549126010 {#402
+        date: 2019-02-02 16:46:50.0 UTC (+00:00)
+      }
+      "creditCardDetails" => CreditCardDetails {#386
+        #_attributes: array:24 [
+          "token" => null
+          "bin" => "411111"
+          "last4" => "1111"
+          "cardType" => "Visa"
+          "expirationMonth" => "05"
+          "expirationYear" => "2020"
+          "customerLocation" => "US"
+          "cardholderName" => null
+          "imageUrl" => "https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox"
+          "prepaid" => "Unknown"
+          "healthcare" => "Unknown"
+          "debit" => "Unknown"
+          "durbinRegulated" => "Unknown"
+          "commercial" => "Unknown"
+          "payroll" => "Unknown"
+          "issuingBank" => "Unknown"
+          "countryOfIssuance" => "Unknown"
+          "productId" => "Unknown"
+          "globalId" => null
+          "accountType" => null
+          "uniqueNumberIdentifier" => null
+          "venmoSdk" => false
+          "expirationDate" => "05/2020"
+          "maskedNumber" => "411111******1111"
+        ]
+      }
+      "customerDetails" => CustomerDetails {#390
+        #_attributes: array:8 [
+          "id" => null
+          "firstName" => null
+          "lastName" => null
+          "company" => null
+          "email" => null
+          "website" => null
+          "phone" => null
+          "fax" => null
+        ]
+      }
+      "billingDetails" => AddressDetails {#409
+        #_attributes: array:13 [
+          "id" => null
+          "firstName" => null
+          "lastName" => null
+          "company" => null
+          "streetAddress" => null
+          "extendedAddress" => null
+          "locality" => null
+          "region" => null
+          "postalCode" => null
+          "countryName" => null
+          "countryCodeAlpha2" => null
+          "countryCodeAlpha3" => null
+          "countryCodeNumeric" => null
+        ]
+      }
+      "shippingDetails" => AddressDetails {#403
+        #_attributes: array:13 [
+          "id" => null
+          "firstName" => null
+          "lastName" => null
+          "company" => null
+          "streetAddress" => null
+          "extendedAddress" => null
+          "locality" => null
+          "region" => null
+          "postalCode" => null
+          "countryName" => null
+          "countryCodeAlpha2" => null
+          "countryCodeAlpha3" => null
+          "countryCodeNumeric" => null
+        ]
+      }
+      "subscriptionDetails" => SubscriptionDetails {#405
+        #_attributes: array:2 [
+          "billingPeriodEndDate" => null
+          "billingPeriodStartDate" => null
+        ]
+      }
+    ]
+  }
+}
+
+[
+  "status_code" => "2"
+  "status" => "Start Pick up"
+  "notification_type" => "status_updated"
+  "order_id" => 2
+  "message" => "Your order has been started"
+  "order_info" => array:6 [
+    "order_id" => 2
+    "id" => 2
+    "bagage" => "2"
+    "date" => "12-12-18"
+    "time" => "4:00PM"
+    "status" => "2"
+  ]
+]

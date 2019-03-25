@@ -1,0 +1,5 @@
+ar,Arabic
+cz,Chinese
+en,English
+fr,French
+sp,Spenish

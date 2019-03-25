@@ -1,0 +1,131 @@
+
+
+http://atithiinfosoft.com/appdev/job_today/admin/login
+email:admin@jt.com
+password:123123
+
+Authentication Module
+
+1)Admin can login
+2)Admin can make forgot password
+3)Admin can change password
+4)Can edit Profile
+5)Logout
+
+Applicant Module
+
+1)Can see applicant list
+2)Can see applicant detail
+3)Can create new applicant
+4)Can Active/Inactive applicant
+5)Can delete applicant
+
+Employer Module
+
+1)Can see employer list
+2)Can see employer detail
+3)Can create new employer
+4)Can Active/Inactive employer
+5)Can delete employer
+
+Language Module
+
+1)Can see language list
+2)Can add new language
+3)Can Edit language
+4)Can Active/Inactive language
+5)Can delete language
+
+Category Module
+
+1)Can see category list
+2)Can add new category
+3)Can Edit category
+4)Can Active/Inactive category
+5)Can delete category
+
+
+State Module
+
+1)Can see state list
+2)Can add new state
+3)Can Edit state
+4)Can Active/Inactive state
+5)Can delete state
+
+
+City Module
+
+1)Can see city list
+2)Can add new city
+3)Can Edit city
+4)Can Active/Inactive city
+5)Can delete city
+
+Position Module
+
+1)Can see position list
+2)Can add new position
+3)Can Edit position
+4)Can Active/Inactive position
+5)Can delete position
+
+Employer reason Module
+
+1)Can see reason list
+2)Can add new reason
+3)Can Edit reason
+4)Can Active/Inactive reason
+5)Can delete reason
+
+
+Applicant report Module
+
+1)Can see report list
+2)Can add new report
+3)Can Edit report
+4)Can Active/Inactive report
+5)Can delete report
+
+
+Job Module
+
+1)Can see job list
+2)Can Active/Inactive job
+
+
+Package Module
+
+1)Can see package list
+2)Can add new package
+3)Can Edit package
+4)Can Active/Inactive package
+
+Transaction Module
+
+1)Can see transaction list
+
+Cms Module
+
+1)Can see cms list
+3)Can Edit cms
+4)Can Active/Inactive cms
+
+Notification Module
+
+1)Can see Latest Applicant/Employer/Job
+2)Can clear list
+
+
+
+
+composer require simplesoftwareio/simple-qrcode "~2"
+
+##Update the config/app.php->providers/alias
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Socket Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--socket.io.js is automatically added by node-->
+        <script src="socket.io/socket.io.js"></script>
+        <!--jQuery Used For Some Frontend Tasks-->
+        <script src="/js/jquery.min.js"></script>
+       <p id="stat"><strong>Status:</strong>Not Connected</p>
+       <h2>Socket.io :</h2>
+       <ul>
+       </ul>
+       <input id="field" placeholder="Wait..." type="text"><input type="button" value="Go" id="btn">
+        <script>
+            //Connecting To socket.io
+            var socket = io.connect(window.location.host);
+            
+            socket.emit("connection",function(){
+                //Setting Message On Connection..              
+            })
+
+            // socket.emit('join',{user_id:3});
+
+            socket.emit("disconnect",{user_id:3});
+
+            socket.emit("updatelocation",{user_id:3,latitude:22.22,longitude:72.22});
+
+
+        </script>      
+    </body>
+</html>
